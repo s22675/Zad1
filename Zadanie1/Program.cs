@@ -2,6 +2,7 @@
 
 static double CalculateAverage(int[] array)
 {
+
     if (array == null)
     {
         throw new ArgumentException("Tablica nie moze byc pusta");
@@ -15,6 +16,6 @@ static double CalculateAverage(int[] array)
     return (double) sum / array.Length;
 }
 
-int[] numbers = {};
+int[] numbers = { 3, 4, 55, 10, 5 };
 double average = CalculateAverage(numbers);
 Console.WriteLine("Średnia: " + average);
