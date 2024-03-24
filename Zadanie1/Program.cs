@@ -2,15 +2,13 @@
 
 static double CalculateAverage(int[] array)
 {
-    if (array == null)
+    
+    if (array == null || array.Length == 0)
     {
         throw new ArgumentException("Tablica nie moze byc pusta");
     }
-    
-    int sum = 0;
-    
-    foreach (int num in array)
-        sum += num;
+
+    int sum = array.Sum();
 
     return (double) sum / array.Length;
 }
