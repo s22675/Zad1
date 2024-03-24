@@ -6,7 +6,7 @@ static double CalculateAverage(int[] array)
     {
         throw new ArgumentException("Tablica nie moze byc pusta");
     }
-    
+  
     return (double) array.Sum() / array.Length;
 }
 
