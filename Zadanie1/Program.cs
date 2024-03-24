@@ -33,8 +33,8 @@ static int CalculateMax(int[] array)
     return max;
 }
 
-int[] numbers = { 3, 4, 55, 10, 5 };
-double average = CalculateAverage(numbers);
-int max = CalculateMax(numbers);
+int[] nums = { 3, 4, 55, 10, 5 };
+double average = CalculateAverage(nums);
+int max = CalculateMax(nums);
 Console.WriteLine("Średnia: " + average);
 Console.WriteLine("Maksymalna liczba: " + max);
