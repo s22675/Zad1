@@ -7,12 +7,7 @@ static double CalculateAverage(int[] array)
         throw new ArgumentException("Tablica nie moze byc pusta");
     }
     
-    int sum = 0;
-    
-    foreach (int num in array)
-        sum += num;
-
-    return (double) sum / array.Length;
+    return (double) array.Sum() / array.Length;
 }
 
 static int CalculateMax(int[] array)
