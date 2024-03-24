@@ -2,7 +2,7 @@
 
 static double CalculateAverage(int[] array)
 {
-    if (array == null)
+    if (array == null || array.Length == 0)
     {
         throw new ArgumentException("Tablica nie moze byc pusta");
     }
@@ -17,7 +17,7 @@ static double CalculateAverage(int[] array)
 
 static int CalculateMax(int[] array)
 {
-    if (array == null)
+    if (array == null || array.Length == 0)
     {
         throw new ArgumentException("Tablica nie moze byc pusta");
     }
@@ -33,8 +33,8 @@ static int CalculateMax(int[] array)
     return max;
 }
 
-int[] nums = { 3, 4, 55, 10, 5 };
-double average = CalculateAverage(nums);
-int max = CalculateMax(nums);
+int[] numbers = { 3, 4, 55, 10, 5 };
+double average = CalculateAverage(numbers);
+int max = CalculateMax(numbers);
 Console.WriteLine("Średnia: " + average);
 Console.WriteLine("Maksymalna liczba: " + max);
