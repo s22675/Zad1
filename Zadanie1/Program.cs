@@ -2,20 +2,17 @@
 
 static double CalculateAverage(int[] array)
 {
-    
     if (array == null || array.Length == 0)
     {
         throw new ArgumentException("Tablica nie moze byc pusta");
     }
-
-    int sum = array.Sum();
-
-    return (double) sum / array.Length;
+  
+    return (double) array.Sum() / array.Length;
 }
 
 static int CalculateMax(int[] array)
 {
-    if (array == null)
+    if (array == null || array.Length == 0)
     {
         throw new ArgumentException("Tablica nie moze byc pusta");
     }
